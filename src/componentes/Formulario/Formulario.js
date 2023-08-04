@@ -17,7 +17,9 @@ export const Formulario = (props) =>{
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
-        console.log('====> ', nome, cargo, imagem, time)
+        props.aoColaboradorCadastrado({
+            nome, cargo, imagem, time
+        });
     };
 
     const [nome, setNome] = useState('');
