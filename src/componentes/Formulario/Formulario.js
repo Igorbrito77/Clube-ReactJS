@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Botao } from "../Botao/Botao";
+import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import './Formulario.css';
@@ -23,8 +23,8 @@ export const Formulario = (props) =>{
 
 
     return (
-        <section className="formulario" onSubmit={aoSalvar}>
-            <form>
+        <section className="formulario">
+            <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
 
                 <CampoTexto 

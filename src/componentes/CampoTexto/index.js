@@ -3,8 +3,6 @@ import './CampoTexto.css';
 
 const CampoTexto = (props) => {
 
-    console.log(props);
-
     const msg = `${props.placeholder}...`;
 
     const aoDigitado = (evento) =>{
