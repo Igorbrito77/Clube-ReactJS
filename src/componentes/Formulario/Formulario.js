@@ -6,20 +6,14 @@ import './Formulario.css';
 
 export const Formulario = (props) =>{
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Back-End',
-        'Mobile',
-        'Inovação e Gestão'
-    ];
-
     const aoSalvar = (evento) =>{
         evento.preventDefault();
         props.aoColaboradorCadastrado({
             nome, cargo, imagem, time
         });
     };
+
+    const times =props.times;
 
     const [nome, setNome] = useState('');
     const [cargo,setCargo] = useState('');
