@@ -4,6 +4,10 @@ import './Time.css'
 export const Time = (props) => {
 
     return (
+
+
+        (props.colaboradores.length > 0) ?
+
         <section className='time' style={ {backgroundColor: props.corSecundaria}}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
 
@@ -17,9 +21,6 @@ export const Time = (props) => {
                     />
                 )}
             </div>
-          
-
-         
-        </section>
+        </section> : ''
     )
 } 

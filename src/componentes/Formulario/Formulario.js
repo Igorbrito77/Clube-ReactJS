@@ -6,21 +6,24 @@ import './Formulario.css';
 
 export const Formulario = (props) =>{
 
-    const aoSalvar = (evento) =>{
-        evento.preventDefault();
+    const [nome, setNome] = useState('')
+    const [cargo, setCargo] = useState('')
+    const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
+
+    const aoSalvar = (evento) => {
+        evento.preventDefault()
         props.aoColaboradorCadastrado({
-            nome, cargo, imagem, time
-        });
-    };
-
-    const times =props.times;
-
-    const [nome, setNome] = useState('');
-    const [cargo,setCargo] = useState('');
-    const [imagem, setImagem] = useState('');
-    const [time, setTime] = useState('');
-
-
+            nome,
+            cargo,
+            imagem,
+            time
+        })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
+    }
 
     return (
         <section className="formulario">
@@ -56,7 +59,7 @@ export const Formulario = (props) =>{
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label= "Time" 
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor=> setTime(valor)}
                 />
