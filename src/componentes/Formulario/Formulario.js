@@ -11,7 +11,6 @@ export const Formulario = (props) =>{
         'Front-End',
         'Back-End',
         'Mobile',
-        'BigData',
         'Inovação e Gestão'
     ];
 
