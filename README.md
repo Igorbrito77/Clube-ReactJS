@@ -2,7 +2,7 @@
 
 Página para configuração de um squad de acordo com os respectivos times implementada com ReactJS.
 
-<img src="/public/imagebs/banner.png">
+<img src="/public/imagens/banner.png">
 
 ## Passos para executar o projeto:
 
