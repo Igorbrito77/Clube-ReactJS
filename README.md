@@ -2,10 +2,12 @@
 
 Página para configuração de um squad de acordo com os respectivos times implementada com ReactJS.
 
+<img src="/public/imagebs/banner.png">
+
 ## Passos para executar o projeto:
 
 
-## Execução com Docker
+### Execução com Docker
 
 Para preparar o ambiente, execute :
 
@@ -16,19 +18,16 @@ Executar o comando `make run` no terminal na pasta do projeto para o Docker inst
 - Após a execução do comando, as dependências estarão baixadas dentro da pasta `node_modules` dentro da pasta do projeto
 - Para executar o projeto posteriormente, basta executar o comando `make server-dev` dentro da pasta do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Acessar a aplicação no endereço e portas definidos no arquivo ".env". Exemplo: http://localhost:3000
+Acessar a aplicação no endereço http://localhost:3000
 
 
-
-## Execução manual com o npm
+### Execução manual com o npm
 
 
 **1)** Download Git - https://git-scm.com/downloads
 
-**2)** Abrir Git Bash na pasta onde o projeto será desenvolvido e executar os comandos para baixar o projeto e selecionar a branch develop:
+**2)** Abrir Git Bash na pasta onde o projeto será desenvolvido e executar os comandos para baixar o projeto:
 
 ```
 git config --global user.name "NOME DO USUÁRIO"
@@ -52,4 +51,4 @@ npm install
 npm start
 ```
 
-Acessar a aplicação no endereço e portas definidos no arquivo ".env". Exemplo: http://localhost:3000
+Acessar a aplicação no endereço http://localhost:3000
