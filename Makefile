@@ -38,6 +38,7 @@ server-dev:
 	docker run -it --rm \
 		--name organo-front \
 		--network host \
+		-v ${PWD}:/app \
 		$(IMAGE_TAG) npm start
 		
 
