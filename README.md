@@ -4,6 +4,9 @@ Página para configuração de um squad de acordo com os respectivos times imple
 
 ## Passos para executar o projeto:
 
+
+## Execução com Docker
+
 Para preparar o ambiente, execute :
 
 - `make build`
@@ -16,10 +19,37 @@ Executar o comando `make run` no terminal na pasta do projeto para o Docker inst
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Acessar a aplicação no endereço e portas definidos no arquivo ".env". Exemplo: http://localhost:3000
 
-### `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## Execução manual com o npm
+
+
+**1)** Download Git - https://git-scm.com/downloads
+
+**2)** Abrir Git Bash na pasta onde o projeto será desenvolvido e executar os comandos para baixar o projeto e selecionar a branch develop:
+
+```
+git config --global user.name "NOME DO USUÁRIO"
+git config --global user.email "E-MAIL DO USUÁRIO"
+git clone https://gitlab.com/lemobs-sigelu/atende/sigelu-atende-api.git
+```
+
+**3)** Entrar na pasta do projeto
+
+**4)** Instalar Node versão 16.17.0 (versão recomendada!) - https://nodejs.org/download/release/v16.17.0/
+
+**5)** Executar os seguintes comandos no Git Bash para instalar as dependências necessárias, ainda na pasta do projeto:
+
+```
+npm install
+```
+
+**6)** Executar o seguinte comando no Git Bash para iniciar a aplicação:
+
+```
+npm start
+```
+
+Acessar a aplicação no endereço e portas definidos no arquivo ".env". Exemplo: http://localhost:3000
