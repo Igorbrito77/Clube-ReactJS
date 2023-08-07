@@ -2,10 +2,13 @@
 
 Página para configuração de um squad de acordo com os respectivos times implementada com ReactJS.
 
-<img src="/public/imagens/banner.png">
+<img src="/public/imagens/print_tela_1.png">
+<img src="/public/imagens/print_tela_2.png">
+
 
 ## Passos para executar o projeto:
 
+Pode-se optar pela execução com **Docker** ou de forma manual com o uso do **npm**
 
 ### Execução com Docker
 
