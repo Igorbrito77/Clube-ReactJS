@@ -7,7 +7,7 @@ install:
 	&& sudo usermod -aG docker $(USER)
 
 #Executa todos os passos necessários para desenvolvimento local
-run : build  server-dev
+run : build  npm-install server-dev
 
 # Constrói a imagem do Docker
 build: 
